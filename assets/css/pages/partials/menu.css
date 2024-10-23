@@ -5,8 +5,20 @@
     background-color: transparent;
     position: absolute !important;
     box-shadow: 0 0 8px -4px var(--cor-branco);
-    padding: 0 140px 0 140px;
-    height: 4.5rem;
+    padding: 20px 10rem 12px 10rem;
+    height: 5.5rem;
+    position: fixed !important;
+    transition: background-color 0.3s ease;
+}
+
+#menu.scrolled {
+    background-color: var(--cor-preto) !important;
+    z-index: 9999 !important;
+}
+
+#logotipo {
+    width: 100%;
+    max-width: 13rem;
 }
 
 .left h1 {
@@ -19,11 +31,12 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding: 0px;
 }
 
 .left a {
     color: var(--cor-branco);
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.9px;
 }
 
@@ -41,6 +54,7 @@
     left: 0px;
     will-change: transform;
     background-color: var(--cor-verde-escuro);
+    z-index: 99999 !important;
 }
 
 .dropdown-menu.show .dropdown-item {
@@ -62,6 +76,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding: 0px;
     justify-content: end;
 }
 

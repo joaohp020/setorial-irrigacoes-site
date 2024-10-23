@@ -1,0 +1,54 @@
+#institucional {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.parceiros {
+    height: 15rem;
+    background-color: var(--cor-preto);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.parceiros img {
+    width: 100%;
+    max-width: 12rem;
+    ;
+}
+
+.quemSomos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 90vh;
+    padding: 0 12rem 0 10rem;
+}
+
+.texto h2 {
+    color: var(--cor-verde-escuro);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.texto p {
+    color: var(--cor-texto);
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.texto a {
+    color: var(--cor-verde) !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ceoSetorial {
+    background-color: var(--cor-verde-escuro);
+    height: 50vh;
+}
