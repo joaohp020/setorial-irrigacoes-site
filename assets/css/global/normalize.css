@@ -1,32 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    line-height: auto;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-weight: inherit;
-  }
-  
-  html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    background-color: #000;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: var(--cor-branco);
-  }
-  
-  section {
-    width: 100vw;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  line-height: auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--cor-branco);
+}
+
+section {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btnPrimary {
+  text-align: center;
+  background-color: var(--cor-verde);
+  box-shadow: 0 0 4px -5px var(--cor-branco);
+  color: var(--cor-branco);
+  border-radius: 7px;
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnPrimary:hover {
+  color: var(--cor-branco);
+  background-color: var(--cor-verde-escuro);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: var(--cor-branco);
+}
+
+.btnSecondary:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.btnThird {
+  background-color: transparent;
+  color: var(--cor-branco);
+  border: 2px solid var(--cor-branco);
+  border-radius: 7px;
+  padding: 10px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnThird:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-verde-escuro);
+  transition: .3s;
+}

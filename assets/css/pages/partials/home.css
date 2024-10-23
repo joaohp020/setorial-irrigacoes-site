@@ -1,0 +1,39 @@
+#home {
+    background-image: url('../../../../files/images/bg-irrigacao.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.headline {
+    padding: 0 10rem;
+
+}
+
+.headline-acoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.headline h1 {
+    color: var(--cor-branco);
+    font-weight: 400;
+    max-width: 90%;
+    letter-spacing: 2px;
+}
+
+.headline h1 span {
+    font-weight: 700;
+}
+
+.headline h4 {
+    color: var(--cor-branco);
+    font-weight: 400;
+    max-width: 100%;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
