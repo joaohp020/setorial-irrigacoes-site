@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: transparent;
     position: absolute !important;
-    box-shadow: 0 0 8px -4px var(--cor-branco);
+    /* box-shadow: 0 0 8px -4px var(--cor-branco); */
     padding: 20px 10rem 12px 10rem;
     height: 5.5rem;
     position: fixed !important;
