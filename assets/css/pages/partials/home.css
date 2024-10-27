@@ -1,5 +1,5 @@
 #home {
-    background-image: url('../../../../files/images/DJI_0044.jpg');
+    /* background-image: url('../../../../files/images/DJI_0044.jpg'); */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -35,4 +35,15 @@
     max-width: 100%;
     opacity: 0.8;
     letter-spacing: 2px;
+}
+
+.quadro {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.quadro iframe {
+    width: 100vw;
+    height: 100vh;
 }
