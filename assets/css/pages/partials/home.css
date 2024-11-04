@@ -1,5 +1,5 @@
 #home {
-    /* background-image: url('../../../../files/images/DJI_0044.jpg'); */
+    background-image: url('../../../../files/images/DJI_0044.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -10,7 +10,7 @@
 }
 
 .headline {
-    padding: 0 10rem;
+    padding: 0 11.5rem;
 }
 
 .headline-acoes {
