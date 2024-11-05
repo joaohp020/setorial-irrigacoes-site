@@ -1,0 +1,166 @@
+#contato {
+    background-color: var(--cor-branco);
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-contato {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    text-align: start;
+    padding: 0 11.3rem;
+}
+
+.titulo-contato h2,
+.titulo-contato h4 {
+    color: var(--cor-verde-escuro);
+    font-family: var(--jura);
+}
+
+.titulo-contato h2 {
+    /* font-size: 1.8rem; */
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.titulo-contato h4 {
+    width: 100%;
+    max-width: 25rem;
+    margin: 1rem 0 3rem 0;
+}
+
+.titulo-contato span {
+    color: var(--cor-laranja);
+    font-family: var(--bold);
+}
+
+.fomulario {
+    display: flex;
+    height: 450px;
+    max-width: 74vw;
+    width: 100%;
+}
+
+.titulo-informacoes-contato {
+    background-color: var(--cor-verde-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    width: calc(40% - 20px);
+}
+
+.titulo-informacoes-contato h3 {
+    color: var(--cor-branco);
+    font-family: var(--jura);
+    text-align: start;
+    letter-spacing: 0px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.informacoes-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: -2.5rem 0 0 0;
+}
+
+.informacoes-topico {
+    display: flex;
+    gap: 8px;
+}
+
+.informacoes-topico img {
+    width: 100%;
+    max-width: 1.5rem;
+    object-fit: contain;
+}
+
+.informacoes-topico p {
+    color: var(--cor-branco);
+    font-family: var(--jura);
+    width: 100%;
+    max-width: 15rem;
+    font-size: 12px;
+    margin: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 1rem;
+    margin: -2.5rem 0 0 0;
+}
+
+.i-instagram,
+.i-facebook,
+.i-whatsapp {
+    width: 100%;
+    max-width: 1.7rem;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1000px) {
+    .contato {
+        height: 130vh;
+        flex-direction: column;
+    }
+
+    .titulo-contato {
+        margin: 0 0 1rem 0;
+    }
+
+    .titulo-contato h2 {
+        font-size: 1.8rem;
+    }
+
+    .titulo-contato h4 {
+        max-width: 19rem;
+        margin: 1rem 0;
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+
+    .fomulario {
+        height: 45rem;
+        width: calc(82%);
+        flex-direction: column-reverse;
+    }
+
+    .titulo-informacoes-contato {
+        flex-direction: column;
+        padding: 30px;
+        width: calc(105% - 0px);
+    }
+
+    .informacoes-contato {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .informacoes-topico img {
+        max-width: 1.5rem;
+    }
+
+    .informacoes-topico p {
+        max-width: 13rem;
+        font-size: 0.9rem;
+    }
+
+    .redes-sociais {
+        margin: 1rem 0 0 0;
+    }
+
+    .i-instagram,
+    .i-facebook,
+    .i-whatsapp {
+        max-width: 1.7rem;
+    }
+
+    .fomulario iframe {}
+}
