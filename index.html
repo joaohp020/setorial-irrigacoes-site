@@ -20,13 +20,13 @@
 </head>
 
 <body>
-    <header id="menu" class="col-md-12">
+    <header id="menu" class="col-md-12 d-none d-sm-none d-md-flex">
         <div class="left col-md-9">
             <img id="logotipo" src="files/images/LOGO V.png" alt="">
             <!-- <h1>LOGO</h1> -->
             <div class="opcoes-menu">
-                <a href="" id="" target="">Home</a>
-                <a href="" id="" target="">Quem Somos</a>
+                <a href="" id="#home" target="">Home</a>
+                <a href="" id="#institucional">Quem Somos</a>
                 <link href="./assets/css/pages/index.css" rel="stylesheet" />
                 <div class="dropdown">
                     <button class="btn btnSecondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -36,7 +36,7 @@
                     <div class="dropdown-menu col-md-12" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Aspersores</a>
                         <a class="dropdown-item" href="#">Carretéis</a>
-                        <a class="dropdown-item" href="#">Motobomba</a>
+                        <a class="dropdown-item" href="#" data-target="partials/produtos/motobomba/motobomba.html">Motobomba</a>
                         <a class="dropdown-item" href="#">Tubo PEMD</a>
                         <a class="dropdown-item" href="#">UTM</a>
                     </div>
@@ -53,8 +53,12 @@
         </div>
     </header>
 
+    <div class="menuMobile d-flex d-sm-flex d-md-none">
+        
+    </div>
+
     <section id="home" class="">
-        <div class="col-md-7 headline">
+        <div class="col-md-7 col-12 headline">
             <h1>Irrigação do campo com <span>Tecnologia</span></h1>
             <h4>Equipamentos robustos que se adaptam a diversas condições; Nosso compromisso é ir além em cada Projeto
             </h4>
@@ -99,7 +103,8 @@
                 <!-- <iframe src="https://www.youtube-nocookie.com/embed/xEoTU9B44wE?si=UTYUuLQDlTBo-c9j&amp;controls=0"
                     title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
 
-                    <iframe src="https://www.youtube.com/embed/xEoTU9B44wE?si=RhfOHPqQUBcYP4dZ" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xEoTU9B44wE?si=RhfOHPqQUBcYP4dZ" frameborder="0"
+                    allow="autoplay" allowfullscreen></iframe>
             </div>
 
             <!-- <div class="ceoSetorial col-md-6">
@@ -114,9 +119,13 @@
                 <!-- <h6>Diretor</h6> -->
                 <!-- <hr> -->
 
-                <p>Há mais de 30 anos oferecemos aos nossos clientes soluções que otimizam a produtividade da lavoura através do uso de produtos de alta qualidade.</p>
+                <p>Há mais de 30 anos oferecemos aos nossos clientes soluções que otimizam a produtividade da lavoura
+                    através do uso de produtos de alta qualidade.</p>
 
-                <p>Nossa equipe é formada por profissionais capacitados para atender a demanda de um mercado cada vez mais exigente, tanto na área de produção quanto na área de assistência técnica. Para facilitar o acesso dos consumidores aos nossos serviços, contamos com uma rede de revendedores espalhados pelo Brasil, sempre prontos para melhor atendê-los.</p>
+                <p>Nossa equipe é formada por profissionais capacitados para atender a demanda de um mercado cada vez
+                    mais exigente, tanto na área de produção quanto na área de assistência técnica. Para facilitar o
+                    acesso dos consumidores aos nossos serviços, contamos com uma rede de revendedores espalhados pelo
+                    Brasil, sempre prontos para melhor atendê-los.</p>
             </div>
         </div>
     </section>
