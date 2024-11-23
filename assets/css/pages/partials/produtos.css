@@ -11,6 +11,16 @@
     z-index: 999 !important;
 }
 
+.opcoes-menu a:hover {
+    text-decoration: none;
+    color: var(--cor-branco);
+    border-bottom: 1px solid;
+}
+
+.left a {
+    padding: 12px 20px;
+}
+
 .dropdown .btnSecondary {
     background: transparent;
     color: var(--cor-branco);
@@ -159,11 +169,15 @@
     text-align: center;
 }
 
-#dezesseis {
+#dezesseis,
+#dezoito,
+#vinte {
     overflow-x: scroll;
 }
 
-#dezesseis table {
+#dezesseis table,
+#dezoito table,
+#vinte table {
     margin-bottom: 12px;
     width: 160%;
 }
