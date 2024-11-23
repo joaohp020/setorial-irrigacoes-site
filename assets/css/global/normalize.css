@@ -82,3 +82,13 @@ a:hover {
   color: var(--cor-verde-escuro);
   transition: .3s;
 }
+
+.botao-whatsapp-flutuante {
+  position: fixed;
+  right: 5px;
+  bottom: 2%;
+}
+
+.botao-whatsapp-flutuante img {
+  width: 50px;
+}
