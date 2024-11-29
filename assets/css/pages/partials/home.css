@@ -1,5 +1,5 @@
 #home {
-    background-image: url('../../../../files/images/DJI_0044.jpg');
+    background-image: url('../../../../files/images/DJI_0029.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -22,7 +22,8 @@
 .headline h1 {
     color: var(--cor-branco);
     font-weight: 400;
-    max-width: 85%;
+    font-size: 3rem;
+    max-width: 65%;
     letter-spacing: 1px;
 }
 

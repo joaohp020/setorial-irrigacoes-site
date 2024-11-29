@@ -1,5 +1,5 @@
 #servicos {
-    background-image: url('../../../../files/images/bg-servicos.png');
+    background-image: url('../../../../files/images/DJI_0042.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -20,7 +20,7 @@
     color: var(--cor-branco);
     font-weight: 700;
     max-width: 80%;
-    font-size: 38px;
+    font-size: 40px;
     letter-spacing: 1px;
 }
 
@@ -31,9 +31,9 @@
 .descricao-servicos p {
     color: var(--cor-branco);
     /* font-weight: 400; */
-    max-width: 65%;
-    opacity: 0.8;
-    font-size: 14px;
+    max-width: 68%;
+    opacity: 1;
+    font-size: 18px;
     /* letter-spacing: 2px; */
 }
 
