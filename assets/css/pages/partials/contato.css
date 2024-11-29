@@ -40,8 +40,8 @@
 
 .fomulario {
     display: flex;
-    height: 450px;
-    max-width: 74vw;
+    height: 400px;
+    max-width: 76vw;
     width: 100%;
 }
 
@@ -104,14 +104,17 @@
     object-fit: contain;
 }
 
-@media screen and (max-width: 1000px) {
-    .contato {
+@media screen and (max-width: 768px) {
+    #contato {
         height: 130vh;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .titulo-contato {
-        margin: 0 0 1rem 0;
+        margin: 0px;
+        padding: 0 25px;
     }
 
     .titulo-contato h2 {
@@ -128,7 +131,9 @@
     .fomulario {
         height: 45rem;
         width: calc(82%);
+        max-width: 86vw;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .titulo-informacoes-contato {
@@ -160,6 +165,10 @@
     .i-facebook,
     .i-whatsapp {
         max-width: 1.7rem;
+    }
+
+    .mapa {
+        width: 86vw;
     }
 
     .fomulario iframe {
