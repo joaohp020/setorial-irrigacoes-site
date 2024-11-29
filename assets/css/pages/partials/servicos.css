@@ -89,15 +89,27 @@
 
 @media screen and (max-width: 768px) {
     #servicos {
-        height: 135vh;
+        height: 150vh;
         justify-content: center;
         align-items: center;
         padding: 0 10px;
         flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .descricao-servicos h2 {
+        max-width: 98%;
+        font-size: 35px;
+        letter-spacing: 0px;
     }
 
     .descricao-servicos p {
         max-width: 100%;
         font-size: 14px;
+    }
+
+    .headline-acoes {
+        display: flex;
+        /* gap: 1rem; */
     }
 }

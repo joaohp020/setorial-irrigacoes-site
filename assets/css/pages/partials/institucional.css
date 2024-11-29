@@ -87,7 +87,7 @@
 @media screen and (max-width: 768px) {
     .parceiros {
         height: 12rem;
-        gap: 3px;
+        gap: 25px;
     }
 
     .parceiros img {
@@ -102,10 +102,14 @@
     .quemSomos {
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: 1rem;
-        height: 107vh;
+        height: 123vh;
         padding: 0 12px;
+    }
+
+    .quadro {
+        height: 200px;
     }
 
     .quadro iframe {

@@ -29,10 +29,11 @@ section {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .btnPrimary {
@@ -51,6 +52,7 @@ a:hover {
 .btnPrimary:hover {
   color: var(--cor-branco);
   background-color: var(--cor-verde-escuro);
+  text-decoration: none;
 }
 
 .btnSecondary {
@@ -63,6 +65,7 @@ a:hover {
   border: none;
   outline: none;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .btnThird {
@@ -81,6 +84,7 @@ a:hover {
   background-color: var(--cor-branco);
   color: var(--cor-verde-escuro);
   transition: .3s;
+  text-decoration: none;
 }
 
 .botao-whatsapp-flutuante {

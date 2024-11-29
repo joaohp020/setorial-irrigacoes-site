@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setorial Irrigações</title>
 
+    <link href="./assets/css/pages/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -22,34 +23,54 @@
 <body>
     <header id="menu" class="col-md-12 d-none d-sm-none d-md-flex">
         <div class="left col-md-9">
-            <img id="logotipo" src="files/images/LOGO V.png" alt="">
-            <!-- <h1>LOGO</h1> -->
+            <img id="logotipo" src="files/images/LOGO V.png" alt="Logotipo - Setorial Irrigações">
             <div class="opcoes-menu">
-                <a href="" id="#home" target="">Home</a>
-                <a href="" id="#institucional">Quem Somos</a>
-                <link href="./assets/css/pages/index.css" rel="stylesheet" />
-                <div class="dropdown">
-                    <button class="btn btnSecondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Produtos
-                    </button>
-                    <div class="dropdown-menu col-md-12" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Aspersores</a>
-                        <a class="dropdown-item" href="#">Carretéis</a>
-                        <a class="dropdown-item" href="#"
-                            data-target="partials/produtos/motobomba/motobomba.html">Motobomba</a>
-                        <a class="dropdown-item" href="#">Tubo PEMD</a>
-                        <a class="dropdown-item" href="#">UTM</a>
-                    </div>
-                </div>
+                <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Produtos</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Aspersores</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partials/produtos/aspersores/gemini.html">Gemini</a></li>
+                                <li><a href="partials/produtos/aspersores/mariner.html">Mariner</a></li>
+                                <li><a href="partials/produtos/aspersores/mercury.html">Mercury</a></li>
+                                <li><a href="partials/produtos/aspersores/skipper.html">Skipper</a></li>
+                                <li><a href="partials/produtos/aspersores/setorialV.html">Setorial V</a></li>
+                                <li><a href="partials/produtos/aspersores/explorer.html">Explorer</a></li>
+                                <li><a href="partials/produtos/aspersores/reflex.html">Reflex</a></li>
+                                <li><a href="partials/produtos/aspersores/wing.html">Wing</a></li>
+                                <li><a href="partials/produtos/aspersores/synkro.html">Sinkro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#carreteis" class="dropdown-toggle">Carretéis</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partials/produtos/hr63.html">HR 63</a></li>
+                                <li><a href="partials/produtos/">HR 75</a></li>
+                                <li><a href="partials/produtos/">HR 90</a></li>
+                                <li><a href="partials/produtos/">HR 110</a></li>
+                                <li><a href="partials/produtos/">HR G4 125</a></li>
+                                <li><a href="partials/produtos/">HR G4 140</a></li>
+                                <li><a href="partials/produtos/">HR G5 160</a></li>
+                                <li><a href="partials/produtos/">HR sobre Julieta</a></li>
+                                <li><a href="partials/produtos/">HR sobre Julieta</a></li>
+                                <li><a href="partials/produtos/">Montagem HR Monobloco</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#motobombas">Motobombas</a></li>
+                        <li><a href="#tubo-pemd">Tubo PEMD</a></li>
+                        <li><a href="#utm">UTM</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
             </div>
         </div>
 
         <div class="right col-md-3">
-            <!-- <div class="language">
-                <img src="" alt="">
-                <p>BR</p>
-            </div> -->
             <a href="#contato" class="col-md-10 btnPrimary">Contato</a>
         </div>
     </header>
@@ -217,7 +238,7 @@
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.703886734138!2d-47.378266124700026!3d-22.552762579505828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88133bffd6bef%3A0x15049e3d351a4f1c!2sSetorial%20Irriga%C3%A7%C3%A3o%20Comercial!5e0!3m2!1spt-BR!2sbr!4v1730813792072!5m2!1spt-BR!2sbr"
-                    width="750" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="750" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -230,6 +251,10 @@
     </div>
 
     <script src="assets/js/menu.js"></script>
+
+    <footer>
+        <p>Setorial Sistemas de Irrigação</p>
+    </footer>
 </body>
 
 </html>
