@@ -8,3 +8,7 @@ footer {
     color: var(--cor-branco);
     letter-spacing: 1px;
 }
+
+footer p {
+    margin: 0px;
+}

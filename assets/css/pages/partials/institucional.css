@@ -84,7 +84,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .parceiros {
         height: 12rem;
         gap: 25px;
@@ -124,5 +124,20 @@
         margin-top: -5rem;
         height: 111vh;
         flex-direction: column-reverse;
+    }
+
+    .texto p {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .texto h2 {
+        font-size: 35px;
+        /* width: 66%; */
+    }
+    
+    .dioMedes h2 {
+        font-size: 35px;
+        width: 66%;
     }
 }

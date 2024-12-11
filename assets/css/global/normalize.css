@@ -89,10 +89,25 @@ a:hover {
 
 .botao-whatsapp-flutuante {
   position: fixed;
-  right: 5px;
+  right: 10px;
   bottom: 2%;
 }
 
 .botao-whatsapp-flutuante img {
   width: 50px;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .btnPrimary {
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .btnThird {
+    border-radius: 7px;
+    padding: 10px 54px;
+    font-size: 12px;
+  }
 }
