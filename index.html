@@ -9,6 +9,9 @@
     <link href="./assets/css/pages/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -60,18 +63,20 @@
                                     <li><a href="partials/produtos/barraIrrigadora.html">Barra Irrigadora</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#motobombas">Motobombas</a></li>
-                            <li><a href="#tubo-pemd">Tubo PEMD</a></li>
-                            <li><a href="#utm">UTM</a></li>
+                            <li><a href="partials/produtos/motobomba.html">Motobombas</a></li>
+                            <li><a href="partials/produtos/tubos.html">Tubo PEMD</a></li>
+                            <li><a href="partials/produtos/utm.html">UTM</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle">Outros Produtos</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="partials/produtos/balsa.html">Balsa para Eletrobomba</a></li>
                                     <li><a href="partials/produtos/CarretasTubo.html">Carretas de Tubo</a></li>
-                                    <li><a href="partials/produtos/carretaTransformador.html">Carreta Transformador</a></li>
-                                    <li><a href="partials/produtos/recolhimentoHidraulico.html">Recolhimento Hidráulico</a></li>
+                                    <li><a href="partials/produtos/carretaTransformador.html">Carreta Transformador</a>
+                                    </li>
+                                    <li><a href="partials/produtos/recolhimentoHidraulico.html">Recolhimento
+                                            Hidráulico</a></li>
                                     <li><a href="partials/produtos/">Máquina de Solda por fusão
-                                    </a></li>
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -90,16 +95,47 @@
     </div>
 
     <section id="home">
-        <div class="col-md-7 col-12 headline">
-            <h1>Irrigação do campo com <span>Tecnologia</span></h1>
-            <h4>Equipamentos robustos que se adaptam a diversas condições; Nosso compromisso é ir além em cada Projeto
-            </h4>
-            <div class="headline-acoes">
-                <a class="col-md-6 btnPrimary" href="" target="_blank">Entre em contato</a>
-                <a class="col-md-6 btnThird" href="" target="_blank">Saiba mais</a>
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeiro Banner -->
+                <div class="carousel-item bannerUm active">
+                    <div class="col-md-7 col-12 headline">
+                        <h1>Irrigação do campo com <span>Tecnologia</span></h1>
+                        <h4>Equipamentos robustos que se adaptam a diversas condições; Nosso compromisso é ir além em
+                            cada Projeto</h4>
+                        <div class="headline-acoes">
+                            <a class="col-md-6 btnPrimary" href="" target="_blank">Entre em contato</a>
+                            <a class="col-md-6 btnThird" href="" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo Banner -->
+                <div class="carousel-item bannerDois">
+                    <div class="col-md-6 col-12 headline-dois">
+                        <h1>Calcule o <span>tempo estimado de irrigação</span> da sua Maquina</h1>
+                        <h4>Otimize seu tempo com nosso App dedicado, onde você calcula facilmente o tamanho das lâminas, o comprimento das mangueiras e o tempo de operação das máquinas selecionadas, tudo de forma prática e intuitiva.
+                            <br>
+                            <br>
+                            Em vez de depender de tabelas padrão, baixe agora nosso aplicativo para simplificar os cálculos diários no campo. Melhore sua eficiência e produtividade com uma ferramenta que se adapta às suas necessidades.
+                        </h4>
+                        <div class="headline-acoes">
+                            <a class="col-md-6 btnPrimary" href="https://play.google.com/" target="_blank">Baixar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators" style="margin-bottom: 20px;">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
             </div>
         </div>
     </section>
+
 
     <section id="institucional">
         <div class="parceiros">

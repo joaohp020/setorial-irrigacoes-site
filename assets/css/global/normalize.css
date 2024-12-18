@@ -38,6 +38,7 @@ a:hover {
 
 .btnPrimary {
   text-align: center;
+  text-decoration: none;
   background-color: var(--cor-verde);
   box-shadow: 0 0 4px -5px var(--cor-branco);
   color: var(--cor-branco);
