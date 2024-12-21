@@ -5,23 +5,63 @@
 }
 
 .parceiros {
-    height: 15rem;
-    background-color: var(--cor-preto);
+    height: 8rem;
+    background-color: var(--cor-branco);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    overflow: hidden;
+    /* Esconde os elementos fora do contêiner */
+}
+
+.scroll-container {
+    display: flex;
+    gap: 5rem;
+    animation: scroll 60s linear infinite;
 }
 
 .parceiros img {
     width: 100%;
-    max-width: 12rem;
+    max-width: 8rem;
+}
+
+.parceiros #santaIsabel {
+    width: 100%;
+    max-width: 13rem;
+    height: 3rem !important;
 }
 
 .parceiros #jbs {
     max-width: 8rem;
+    height: 3rem;
 }
+
+.parceiros #bunge {
+    width: 100%;
+    max-width: 10rem;
+    height: 3rem;
+}
+
+.parceiros #raizen {
+    max-width: 8rem;
+}
+
+.parceiros #eth {
+    width: 100%;
+    max-width: 9rem;
+}
+
+/* Animação do scroll */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Move toda a linha de logos */
+    }
+}
+
 
 .quemSomos {
     display: flex;
@@ -135,7 +175,7 @@
         font-size: 35px;
         /* width: 66%; */
     }
-    
+
     .dioMedes h2 {
         font-size: 35px;
         width: 66%;

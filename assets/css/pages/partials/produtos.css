@@ -1,14 +1,22 @@
 #menu {
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-preto);
+    background-color: rgb(255 255 255 / 32%) !important;
+    z-index: 9999 !important;
+    box-shadow: 0 0 14px -5px #000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: absolute !important;
-    /* box-shadow: 0 0 8px -4px var(--cor-branco); */
     padding: 20px 10rem 12px 9rem;
-    height: 5.5rem;
+    height: 5rem;
     position: fixed !important;
     transition: background-color 0.3s ease;
     z-index: 999 !important;
+    left: 1%;
+    width: 98%;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px -5px #000 !important;
 }
 
 .opcoes-menu a:hover {
@@ -85,8 +93,6 @@
 
 .box-dados {
     width: 100%;
-    /* border: 1px solid var(--cor-verde); */
-    /* padding: 12px 30px 15px; */
     border-radius: 8px;
     cursor: pointer;
     margin: 0;

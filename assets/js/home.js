@@ -31,4 +31,14 @@ indicators.forEach((indicator, index) => {
 });
 
 // Troca automática de slides a cada 5 segundos
-setInterval(nextSlide, 9000);
+setInterval(nextSlide, 28000);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".scroll-container");
+    const logos = container.innerHTML;
+    
+    // Duplica o conteúdo
+    container.innerHTML += logos;
+  });
+  

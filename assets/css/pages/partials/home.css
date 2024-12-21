@@ -12,22 +12,39 @@
     position: relative;
     height: 100%;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
 }
 
 /* Slide individual */
-.carousel-item {
+/* .carousel-item {
     flex: 0 0 100%;
     display: none;
-    /* Esconde todos os slides */
     align-items: center;
     justify-content: center;
     height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out !important;
 }
 
 .carousel-item.active {
     display: flex;
-    /* Mostra o slide ativo */
+    opacity: 1;
+} */
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex; /* Todos os slides devem ocupar o espaço */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    opacity: 0; /* Invisível por padrão */
+    visibility: hidden; /* Oculto da visão */
+    transition: opacity 2s ease-in-out, visibility 0s 2s; /* Espera a opacidade completar */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Tornar visível */
+    visibility: visible; /* Exibe o slide */
+    transition: opacity 2s ease-in-out, visibility 0s 0s; /* Exibe imediatamente */
 }
 
 /* Backgrounds */
@@ -54,7 +71,7 @@
 }
 
 .bannerUm {
-    background-image: url('../../../../files/images/DJI_0029.jpg');
+    background-image: url('../../../../files/images/bg-irrigacao-campo.png');
 }
 
 .bannerDois {
@@ -65,16 +82,16 @@
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
-    left: 35% !important;
+    left: 36% !important;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .carousel-indicators span {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -91,8 +108,8 @@
 .headline h1 {
     color: var(--cor-branco);
     font-weight: 400;
-    font-size: 3rem;
-    max-width: 65%;
+    font-size: 2.7rem;
+    max-width: 53%;
     letter-spacing: 1px;
 }
 
@@ -112,11 +129,11 @@
 .headline h4 {
     color: var(--cor-branco);
     font-weight: 300;
-    font-size: 20px;
-    max-width: 79%;
+    font-size: 17px;
+    max-width: 72%;
     opacity: 1;
     letter-spacing: 0px;
-    margin: 1.2rem 0 2rem 0;
+    margin: 1.2rem 0 2rem 0;    
 }
 
 .headline-dois h4 {
