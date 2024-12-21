@@ -210,6 +210,41 @@
     color: var(--cor-cinza) !important;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-    
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .produto {
+        margin: 0rem 0 0 0;
+        height: 165vh;
+        padding: 3rem 0;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 0 15px;
+    }
+
+    .cabecalho img {
+        border-radius: 8px 8px 15px 15px;
+        height: 18rem;
+    }
+
+    .cabecalho .descricao {
+        padding: 0 15px;
+    }
+
+    .cabecalho p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 18px;
+    }
+
+    .dados {
+        padding: 0 0px;
+        margin: 0 0 3rem 0;
+    }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {}

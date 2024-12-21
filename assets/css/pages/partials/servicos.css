@@ -90,10 +90,10 @@
 
 @media screen and (max-width: 768px) {
     #servicos {
-        height: 150vh;
+        height: 180vh;
         justify-content: center;
         align-items: center;
-        padding: 0 10px;
+        padding: 5rem 10px;
         flex-direction: column;
         gap: 2.5rem;
     }
@@ -106,7 +106,23 @@
 
     .descricao-servicos p {
         max-width: 100%;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .cards-servicos {
+        gap: 8px;
+    }
+
+    .title-box img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .box p {
         font-size: 14px;
+        line-height: 15px;
+        width: 100%;
     }
 
     .headline-acoes {

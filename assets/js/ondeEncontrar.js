@@ -1,10 +1,10 @@
 // Cria o mapa centralizado no Brasil
-const mapa = L.map('mapa').setView([-14.235, -51.9253], 4); // Coordenadas do centro do Brasil
+const mapaRepresentante = L.map('mapaRepresentante').setView([-14.235, -51.9253], 4); // Coordenadas do centro do Brasil
 
 // Adiciona o mapa base (OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(mapa);
+}).addTo(mapaRepresentante);
 
 // Representantes com as regiões fornecidas
 const representantes = [
@@ -45,6 +45,6 @@ representantes.forEach((rep) => {
     `;
 
     L.marker(rep.coordenadas)
-        .addTo(mapa)
+        .addTo(mapaRepresentante)
         .bindPopup(popupContent, { maxWidth: 200 });
 });

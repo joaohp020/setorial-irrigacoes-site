@@ -126,17 +126,41 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
     .parceiros {
-        height: 12rem;
+        height: 9rem;
         gap: 25px;
     }
 
+    .scroll-container {
+        gap: 2.5rem;
+    }
+
+
     .parceiros img {
-        width: 100%;
         max-width: 6rem;
+    }
+
+    .parceiros #santaIsabel {
+        max-width: 9rem;
+        height: 2rem !important;
     }
 
     .parceiros #jbs {
         max-width: 4rem;
+        height: 2rem;
+    }
+
+    .parceiros #bunge {
+        max-width: 9rem;
+        height: 2rem;
+    }
+
+    .parceiros #eth {
+        max-width: 8rem;
+    }
+
+    .parceiros #raizen {
+        max-width: 8rem;
+        height: 3rem;
     }
 
     .quemSomos {
@@ -144,8 +168,8 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        height: 123vh;
-        padding: 0 12px;
+        height: 110vh;
+        padding: 0 10px;
     }
 
     .quadro {
@@ -166,22 +190,30 @@
         flex-direction: column-reverse;
     }
 
-    .texto p {
+    .texto-institucional p {
         font-size: 14px;
         line-height: 15px;
+        color: var(--cor-texto);
     }
 
-    .texto h2 {
-        font-size: 35px;
-        /* width: 66%; */
+    .texto-institucional h2 {
+        font-size: 30px;
+        width: 100%;
+        color: var(--cor-verde-escuro);
     }
 
     .dioMedes h2 {
-        font-size: 35px;
-        width: 66%;
+        font-size: 28px;
+        width: 100%;
+        color: var(--cor-verde-escuro);
+    }
+    
+    .dioMedes .texto p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 20px;
+        color: var(--cor-preto);
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-    
-}
+@media (min-width: 1024px) and (max-width: 1440px) {}
