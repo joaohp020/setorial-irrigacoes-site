@@ -114,3 +114,11 @@
         /* gap: 1rem; */
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .descricao-servicos p {
+        max-width: 71%;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+}
