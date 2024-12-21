@@ -10,16 +10,18 @@
 }
 
 /* Texto à esquerda */
-.texto {
+.texto-descricao {
     flex: 1;
 }
 
-.texto h2 {
+.texto-descricao h2 {
     font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--cor-verde-escuro);
 }
 
-.texto p {
+.texto-descricao p {
     font-size: 14px;
     color: #666;
 }
@@ -61,6 +63,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.btnPrimary {
+    color: var(--cor-branco) !important;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
