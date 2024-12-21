@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 768px) {
     #servicos {
-        height: 180vh;
+        height: 115vh;
         justify-content: center;
         align-items: center;
         padding: 5rem 10px;
