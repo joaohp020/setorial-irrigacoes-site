@@ -212,6 +212,21 @@
 
 
 @media (min-width: 320px) and (max-width: 768px) {
+    #menu {
+        background-color: rgb(255 255 255 / 32%) !important;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 10px 0px 0px 12px;
+        height: 3.3rem;
+        position: fixed !important;
+        z-index: 999 !important;
+        left: 2%;
+        width: 12%;
+        margin: 10px 0 0 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px -5px #000 !important;
+    }
+
     .produto {
         margin: 0rem 0 0 0;
         height: 165vh;
