@@ -13,7 +13,23 @@ closeMenu.addEventListener("click", () => {
     mobileMenu.classList.add("hidden");
 });
 
-window.addEventListener('scroll', function() {
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggle-products");
+    const productsList = document.getElementById("products-list");
+
+    toggleButton.addEventListener("click", function () {
+        if (productsList.classList.contains("hidden")) {
+            productsList.classList.remove("hidden");
+        } else {
+            productsList.classList.add("hidden");
+        }
+    });
+});
+
+
+
+window.addEventListener('scroll', function () {
     const header = document.getElementById('menu');
     const scrollPosition = window.scrollY;
 
