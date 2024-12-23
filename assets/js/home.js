@@ -31,7 +31,7 @@ indicators.forEach((indicator, index) => {
 });
 
 // Troca automática de slides a cada 5 segundos
-setInterval(nextSlide, 28000);
+setInterval(nextSlide, 18000);
 
 
 document.addEventListener("DOMContentLoaded", () => {
