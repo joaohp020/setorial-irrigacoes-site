@@ -245,9 +245,7 @@
     }
 
     #menu {
-        background-color: rgb(255 255 255 / 32%) !important;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        background-color: #fff !important;
         padding: 10px 0px 0px 12px;
         height: 3.3rem;
         position: fixed !important;
@@ -275,7 +273,7 @@
         position: absolute;
         top: 3rem;
         left: 1% !important;
-        background-color: rgba(255, 255, 255, 0.69) !important;
+        background-color: #fff !important;
         padding: 10px 15px;
         border-radius: 8px 8px 0 0;
         display: flex;
@@ -302,13 +300,13 @@
         font-size: 18px;
         align-self: flex-end;
         cursor: pointer;
-        color: var(--preto-fosco) !important;
+        color: #000 !important;
     }
 
     .menu-list {
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.69) !important;
+        background-color: #fff !important;
         position: absolute;
         top: 100%;
         left: 0;
@@ -324,7 +322,6 @@
     display: flex;
     gap: 15px;
     align-items: center;
-}
 }
 
 
