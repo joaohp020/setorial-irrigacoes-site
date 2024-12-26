@@ -32,7 +32,7 @@
                         <a href="#" class="dropdown-toggle">Produtos</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle">Aspersores</a>
+                                <a href="../aspersores.html" class="dropdown-toggle">Aspersores</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../produtos/gemini.html">Gemini</a></li>
                                     <li><a href="../produtos/mariner.html">Mariner</a></li>
@@ -46,7 +46,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle">Carretéis</a>
+                                <a href="../carreteis.html" class="dropdown-toggle">Carretéis</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../produtos/hr63.html">HR 63</a></li>
                                     <li><a href="../produtos/hr75.html">HR 75</a></li>
@@ -64,7 +64,7 @@
                             <li><a href="../produtos/tubos.html">Tubo PEMD</a></li>
                             <li><a href="../produtos/utm.html">UTM</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle">Outros Produtos</a>
+                                <a href="../outrosProdutos.html" class="dropdown-toggle">Outros Produtos</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="../produtos/balsa.html">Balsa para Eletrobomba</a></li>
                                     <li><a href="../produtos/CarretasTubo.html">Carretas de Tubo</a></li>
@@ -83,11 +83,69 @@
         <div class="right col-md-3">
             <a href="#contato" class="col-md-10 btnPrimary">Contato</a>
         </div>
+
+        <div class="menu-mobile">
+            <button id="menu-toggle" class="menu-icon d-md-none d-block">☰</button>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <button id="close-menu" class="close-icon">✖</button>
+                <div class="opcoes-menu">
+                    <ul class="menu-list">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a class="secaoQuemSomos" href="../../index.html#institucional">Quem Somos</a></li>
+                        <li class="dropdown">
+                            <a href="#" id="toggle-products" class="dropdown-toggle">Produtos</a>
+                            <ul id="products-list" class="dropdown-menu">
+                                <li class="dropdown">
+                                    <a href="../../aspersores.html" class="dropdown-toggle">Aspersores</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="partials/produtos/gemini.html">Gemini</a></li>
+                                        <li><a href="partials/produtos/mariner.html">Mariner</a></li>
+                                        <li><a href="partials/produtos/mercury.html">Mercury</a></li>
+                                        <li><a href="partials/produtos/skipper.html">Skipper</a></li>
+                                        <li><a href="partials/produtos/setorialV.html">Setorial V</a></li>
+                                        <li><a href="partials/produtos/explorer.html">Explorer</a></li>
+                                        <li><a href="partials/produtos/reflex.html">Reflex</a></li>
+                                        <li><a href="partials/produtos/wing.html">Wing</a></li>
+                                        <li><a href="partials/produtos/synkro.html">Sinkro</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="../../carreteis.html" class="dropdown-toggle">Carretéis</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="partials/produtos/hr63.html">HR 63</a></li>
+                                        <li><a href="partials/produtos/hr75.html">HR 75</a></li>
+                                        <li><a href="partials/produtos/hr90.html">HR 90</a></li>
+                                        <li><a href="partials/produtos/hr110.html">HR 110</a></li>
+                                        <li><a href="partials/produtos/hrg4125.html">HR G4 125</a></li>
+                                        <li><a href="partials/produtos/hrg4140.html">HR G4 140</a></li>
+                                        <li><a href="partials/produtos/hrg5160.html">HR G5 160</a></li>
+                                        <li><a href="partials/produtos/hrSobreJulieta.html">HR sobre Julieta</a></li>
+                                        <li><a href="partials/produtos/hrMonobloco.html">Montagem HR Monobloco</a></li>
+                                        <li><a href="partials/produtos/barraIrrigadora.html">Barra Irrigadora</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="partials/produtos/motobomba.html">Motobombas</a></li>
+                                <li><a href="partials/produtos/tubos.html">Tubo PEMD</a></li>
+                                <li><a href="partials/produtos/utm.html">UTM</a></li>
+                                <li class="dropdown">
+                                    <a href="../../outrosProdutos.html" class="dropdown-toggle">Outros Produtos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="partials/produtos/balsa.html">Balsa para Eletrobomba</a></li>
+                                        <li><a href="partials/produtos/CarretasTubo.html">Carretas de Tubo</a></li>
+                                        <li><a href="partials/produtos/carretaTransformador.html">Carreta Transformador</a>
+                                        </li>
+                                        <li><a href="partials/produtos/recolhimentoHidraulico.html">Recolhimento
+                                                Hidráulico</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="partials/ondeEncontrar.html">Onde Encontrar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <div class="menuMobile d-flex d-sm-flex d-md-none">
-
-    </div>
 
     <section class="produto">
         <div class="cabecalho">
@@ -95,10 +153,12 @@
             <div class="descricao">
                 <h2>Reflex</h2>
                 <!-- <hr> -->
-                <p>Irrigação de média capacidade para pressões baixas e altas, rotativo completo ou em ângulos, com retorno lento.
+                <p>Irrigação de média capacidade para pressões baixas e altas, rotativo completo ou em ângulos, com
+                    retorno lento.
 
-                    Os 18 graus de ângulo de trajetória são particularmente desenvolvidos para uso em pivôs centrais, mas pode ser usado em máquinas com carretel enrolador, para instalações fixas ou móveis.
-<br>                    
+                    Os 18 graus de ângulo de trajetória são particularmente desenvolvidos para uso em pivôs centrais,
+                    mas pode ser usado em máquinas com carretel enrolador, para instalações fixas ou móveis.
+                    <br>
                     É conveniente em áreas de alto nível de ventos e em campos onde passa-se rede elétrica.
                 </p>
             </div>
@@ -107,43 +167,43 @@
         <div class="dados">
             <div class="box-dados col-md-12">
                 <h3>Caracteristicas</h3>
-                
+
                 <div class="row">
                     <div class="col">
-                            <div class="card-dados">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>Diâmetro da Mangueira</td>
-                                            <td>63 mm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Expessura da Mangueira</td>
-                                            <td>4,7 mm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Comprimento da Mangueira</td>
-                                            <td>até 250 m</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pressão de Entrada do HR</td>
-                                            <td>40 - 85 mca</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vazão do Aspersor</td>
-                                            <td>15 - 30 m³/h</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Espaçamento entre Faixas</td>
-                                            <td>36 - 48 m</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Área Irrigada</td>
-                                            <td>até 10 ha</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="card-dados">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Diâmetro da Mangueira</td>
+                                        <td>63 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expessura da Mangueira</td>
+                                        <td>4,7 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comprimento da Mangueira</td>
+                                        <td>até 250 m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pressão de Entrada do HR</td>
+                                        <td>40 - 85 mca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vazão do Aspersor</td>
+                                        <td>15 - 30 m³/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espaçamento entre Faixas</td>
+                                        <td>36 - 48 m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Área Irrigada</td>
+                                        <td>até 10 ha</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,170 +211,170 @@
                 <h3>Dados Técnicos</h3>
                 <div class="row" title="Tabela Precipitação HRF 63 Mini - Aspersos Skipper 1.1/2">
                     <div class="col">
-                            <div class="card-dados">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="dezesseis-tab" data-toggle="tab"
-                                            href="#dezesseis" role="tab" aria-controls="dezesseis"
-                                            aria-selected="true">16</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="dezoito-tab" data-toggle="tab" href="#dezoito"
-                                            role="tab" aria-controls="dezoito" aria-selected="false">18</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="vinte-tab" data-toggle="tab" href="#vinte" role="tab"
-                                            aria-controls="vinte" aria-selected="false">20</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="dezesseis" role="tabpanel"
-                                        aria-labelledby="dezesseis-tab">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
-                                                    <th>ESPAÇAMENTO (m)</th>
-                                                    <th>VAZÃO (m³/h)</th>
-                                                    <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
-                                                    <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>2,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="tab-pane fade" id="dezoito" role="tabpanel"
-                                        aria-labelledby="dezoito-tab">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
-                                                    <th>ESPAÇAMENTO (m)</th>
-                                                    <th>VAZÃO (m³/h)</th>
-                                                    <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
-                                                    <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                            </tbody>
-                                        </table></div>
-                                    <div class="tab-pane fade" id="vinte" role="tabpanel" aria-labelledby="vinte-tab">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
-                                                    <th>ESPAÇAMENTO (m)</th>
-                                                    <th>VAZÃO (m³/h)</th>
-                                                    <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
-                                                    <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
-                                                    <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>4,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4,0</td>
-                                                    <td>42</td>
-                                                    <td>15</td>
-                                                    <td>24</td>
-                                                    <td>15</td>
-                                                    <td>10:00</td>
-                                                    <td>12:00</td>
-                                                    <td>13:20</td>
-                                                </tr>
-                                            </tbody>
-                                        </table></div>
+                        <div class="card-dados">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="dezesseis-tab" data-toggle="tab" href="#dezesseis"
+                                        role="tab" aria-controls="dezesseis" aria-selected="true">16</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="dezoito-tab" data-toggle="tab" href="#dezoito" role="tab"
+                                        aria-controls="dezoito" aria-selected="false">18</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="vinte-tab" data-toggle="tab" href="#vinte" role="tab"
+                                        aria-controls="vinte" aria-selected="false">20</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="dezesseis" role="tabpanel"
+                                    aria-labelledby="dezesseis-tab">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
+                                                <th>ESPAÇAMENTO (m)</th>
+                                                <th>VAZÃO (m³/h)</th>
+                                                <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
+                                                <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-
+                                <div class="tab-pane fade" id="dezoito" role="tabpanel" aria-labelledby="dezoito-tab">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
+                                                <th>ESPAÇAMENTO (m)</th>
+                                                <th>VAZÃO (m³/h)</th>
+                                                <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
+                                                <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="vinte" role="tabpanel" aria-labelledby="vinte-tab">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>PRESSÃO NO ASPERSOR (Kgf/cm²)</th>
+                                                <th>ESPAÇAMENTO (m)</th>
+                                                <th>VAZÃO (m³/h)</th>
+                                                <th>LAMINA BRUTA DE ÁGUA APLICADA NA FAIXA IRRIGADA (mm)</th>
+                                                <th>VELOC. DE RECOLHIMENTO DA MANGUEIRA m/h</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 150m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 180 m (horas)</th>
+                                                <th>TEMPO DE IRRIGAÇÃO NA FAIXA 250m (horas)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>4,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4,0</td>
+                                                <td>42</td>
+                                                <td>15</td>
+                                                <td>24</td>
+                                                <td>15</td>
+                                                <td>10:00</td>
+                                                <td>12:00</td>
+                                                <td>13:20</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

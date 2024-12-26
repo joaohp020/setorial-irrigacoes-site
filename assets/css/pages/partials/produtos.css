@@ -207,19 +207,107 @@
     color: var(--cor-cinza) !important;
 }
 
+.menu-mobile {
+    display: none;
+}
 
 @media (min-width: 320px) and (max-width: 768px) {
     #menu {
         background-color: #fff !important;
-        padding: 3px 0px 0px 11px;
+        padding: 3px 0px 0px 10px;
         height: 2.5rem;
         position: fixed !important;
         z-index: 999 !important;
         left: 2%;
-        width: 12%;
+        width: 10%;
         margin: 10px 0 0 0;
         border-radius: 8px;
         box-shadow: 0 0 10px -5px #000 !important;
+    }
+
+    .menu-mobile {
+        position: relative;
+        display: flex !important;
+    }
+
+    .menu-icon {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 3rem;
+        left: 1% !important;
+        background-color: #fff !important;
+        padding: 10px 15px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        width: 88vw !important;
+        height: auto !important;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: var(--preto-fosco);
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+    }
+
+    .close-icon {
+        background: none;
+        border: none;
+        font-size: 18px;
+        align-self: flex-end;
+        cursor: pointer;
+        color: #000 !important;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        gap: 12px;
+        padding: 15px 10px;
+        z-index: 9999 !important;
+    }
+
+    .dropdown .dropdown-menu {
+        position: relative;
+        left: 0;
+        width: 100%;
+        top: auto;
+        z-index: 9999;
+    }
+
+    .dropdown .dropdown-menu .dropdown-menu {
+        left: 0;
+        top: auto;
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        /* Torna o menu vertical */
+    }
+
+    .left,
+    .right {
+        display: none;
     }
 
     .produto {

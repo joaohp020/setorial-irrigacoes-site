@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Setorial Irrigações</title>
+    <title>Aspersores - Setorial Irrigações</title>
 
-    <link href="../../../assets/css/pages/index.css" rel="stylesheet" />
+    <link href="../assets/css/pages/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -21,61 +25,62 @@
 </head>
 
 <body>
-    <header id="menu" class="col-md-12 d-none d-sm-none d-md-flex">
+    <header id="menu" class="col-md-12 d-sm-none d-md-flex">
         <div class="left col-md-9">
-            <img id="logotipo" src="../../files/images/LOGO.png" alt="Logotipo - Setorial Irrigações">
+            <img id="logotipo" src="../files/images/LOGO.png" alt="Logotipo - Setorial Irrigações">
             <div class="opcoes-menu">
                 <ul class="menu-list">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a class="secaoQuemSomos" href="../../index.html#institucional">Quem Somos</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="secaoQuemSomos" href="../index.html#institucional">Quem Somos</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Produtos</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown">
-                                <a href="../aspersores.html" class="dropdown-toggle">Aspersores</a>
+                                <a href="aspersores.html" class="dropdown-toggle">Aspersores</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../produtos/gemini.html">Gemini</a></li>
-                                    <li><a href="../produtos/mariner.html">Mariner</a></li>
-                                    <li><a href="../produtos/mercury.html">Mercury</a></li>
-                                    <li><a href="../produtos/skipper.html">Skipper</a></li>
-                                    <li><a href="../produtos/setorialV.html">Setorial V</a></li>
-                                    <li><a href="../produtos/explorer.html">Explorer</a></li>
-                                    <li><a href="../produtos/reflex.html">Reflex</a></li>
-                                    <li><a href="../produtos/wing.html">Wing</a></li>
-                                    <li><a href="../produtos/synkro.html">Sinkro</a></li>
+                                    <li><a href="produtos/gemini.html">Gemini</a></li>
+                                    <li><a href="produtos/mariner.html">Mariner</a></li>
+                                    <li><a href="produtos/mercury.html">Mercury</a></li>
+                                    <li><a href="produtos/skipper.html">Skipper</a></li>
+                                    <li><a href="produtos/setorialV.html">Setorial V</a></li>
+                                    <li><a href="produtos/explorer.html">Explorer</a></li>
+                                    <li><a href="produtos/reflex.html">Reflex</a></li>
+                                    <li><a href="produtos/wing.html">Wing</a></li>
+                                    <li><a href="produtos/synkro.html">Sinkro</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="../carreteis.html" class="dropdown-toggle">Carretéis</a>
+                                <a href="#" class="dropdown-toggle">Carretéis</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../produtos/hr63.html">HR 63</a></li>
-                                    <li><a href="../produtos/hr75.html">HR 75</a></li>
-                                    <li><a href="../produtos/hr90.html">HR 90</a></li>
-                                    <li><a href="../produtos/hr110.html">HR 110</a></li>
-                                    <li><a href="../produtos/hrg4125.html">HR G4 125</a></li>
-                                    <li><a href="../produtos/hrg4140.html">HR G4 140</a></li>
-                                    <li><a href="../produtos/hrg5160.html">HR G5 160</a></li>
-                                    <li><a href="../produtos/hrSobreJulieta.html">HR sobre Julieta</a></li>
-                                    <li><a href="../produtos/hrMonobloco.html">Montagem HR Monobloco</a></li>
-                                    <li><a href="../produtos/barraIrrigadora.html">Barra Irrigadora</a></li>
+                                    <li><a href="produtos/hr63.html">HR 63</a></li>
+                                    <li><a href="produtos/hr75.html">HR 75</a></li>
+                                    <li><a href="produtos/hr90.html">HR 90</a></li>
+                                    <li><a href="produtos/hr110.html">HR 110</a></li>
+                                    <li><a href="produtos/hrg4125.html">HR G4 125</a></li>
+                                    <li><a href="produtos/hrg4140.html">HR G4 140</a></li>
+                                    <li><a href="produtos/hrg5160.html">HR G5 160</a></li>
+                                    <li><a href="produtos/hrSobreJulieta.html">HR sobre Julieta</a></li>
+                                    <li><a href="produtos/hrMonobloco.html">Montagem HR Monobloco</a></li>
+                                    <li><a href="produtos/barraIrrigadora.html">Barra Irrigadora</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../produtos/motobomba.html">Motobombas</a></li>
-                            <li><a href="../produtos/tubos.html">Tubo PEMD</a></li>
-                            <li><a href="../produtos/utm.html">UTM</a></li>
+                            <li><a href="produtos/motobomba.html">Motobombas</a></li>
+                            <li><a href="produtos/tubos.html">Tubo PEMD</a></li>
+                            <li><a href="produtos/utm.html">UTM</a></li>
                             <li class="dropdown">
-                                <a href="../outrosProdutos.html" class="dropdown-toggle">Outros Produtos</a>
+                                <a href="#" class="dropdown-toggle">Outros Produtos</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="../produtos/balsa.html">Balsa para Eletrobomba</a></li>
-                                    <li><a href="../produtos/CarretasTubo.html">Carretas de Tubo</a></li>
-                                    <li><a href="../produtos/carretaTransformador.html">Carreta Transformador</a></li>
-                                    <li><a href="../produtos/recolhimentoHidraulico.html">Recolhimento Hidráulico</a>
+                                    <li><a href="produtos/balsa.html">Balsa para Eletrobomba</a></li>
+                                    <li><a href="produtos/CarretasTubo.html">Carretas de Tubo</a></li>
+                                    <li><a href="produtos/carretaTransformador.html">Carreta Transformador</a>
                                     </li>
+                                    <li><a href="produtos/recolhimentoHidraulico.html">Recolhimento
+                                            Hidráulico</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="../ondeEncontrar.html">Onde Encontrar</a></li>
+                    <li><a href="ondeEncontrar.html">Onde Encontrar</a></li>
                 </ul>
             </div>
         </div>
@@ -90,13 +95,13 @@
                 <button id="close-menu" class="close-icon">✖</button>
                 <div class="opcoes-menu">
                     <ul class="menu-list">
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a class="secaoQuemSomos" href="../../index.html#institucional">Quem Somos</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="secaoQuemSomos" href="index.html#institucional">Quem Somos</a></li>
                         <li class="dropdown">
                             <a href="#" id="toggle-products" class="dropdown-toggle">Produtos</a>
                             <ul id="products-list" class="dropdown-menu">
                                 <li class="dropdown">
-                                    <a href="../../aspersores.html" class="dropdown-toggle">Aspersores</a>
+                                    <a href="aspersores.html" class="dropdown-toggle">Aspersores</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="partials/produtos/gemini.html">Gemini</a></li>
                                         <li><a href="partials/produtos/mariner.html">Mariner</a></li>
@@ -110,7 +115,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="../../carreteis.html" class="dropdown-toggle">Carretéis</a>
+                                    <a href="carreteis.html" class="dropdown-toggle">Carretéis</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="partials/produtos/hr63.html">HR 63</a></li>
                                         <li><a href="partials/produtos/hr75.html">HR 75</a></li>
@@ -128,11 +133,12 @@
                                 <li><a href="partials/produtos/tubos.html">Tubo PEMD</a></li>
                                 <li><a href="partials/produtos/utm.html">UTM</a></li>
                                 <li class="dropdown">
-                                    <a href="../../outrosProdutos.html" class="dropdown-toggle">Outros Produtos</a>
+                                    <a href="outrosProdutos.html" class="dropdown-toggle">Outros Produtos</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="partials/produtos/balsa.html">Balsa para Eletrobomba</a></li>
                                         <li><a href="partials/produtos/CarretasTubo.html">Carretas de Tubo</a></li>
-                                        <li><a href="partials/produtos/carretaTransformador.html">Carreta Transformador</a>
+                                        <li><a href="partials/produtos/carretaTransformador.html">Carreta
+                                                Transformador</a>
                                         </li>
                                         <li><a href="partials/produtos/recolhimentoHidraulico.html">Recolhimento
                                                 Hidráulico</a></li>
@@ -147,23 +153,37 @@
         </div>
     </header>
 
-    <section class="produto">
-        <div class="cabecalho">
-            <img src="../../../files/images/produtos/carretas_tubo.webp">
-            <div class="descricao">
-                <h2>Carretas de Tubo</h2>
-                <!-- <hr> -->
-                <p>Carreta Transportadora de Tubos para Irrigação, tipo espinha de peixe para ate 40 tubos de 10” ou 48 tubos de 8”, eixo tipo tandem, 4 rodas com pneus novos, 2 cestos grandes para acomodar melhor pecas, para-choque, e dispositivo de levante para hidráulico do trator.
-                </p>
-            </div>
+    <section class="galeria">
+        <div class=" col-md-12">
+            <h3>Outros Produtos</h3>
+            <p>Confira abaixo os todos os modelos disponíveis</p>
+        </div>
+
+        <div class="col-md-12 col-12 linha-produtos">
+            <a href="produtos/balsa.html" class="col-md-4 col-12 card-tipo-produto">
+                <img src="../files/images/produtos/balsa-para-eletrobomba.webp">
+                <h4>Balsa para Eletrobomba</h4>
+            </a>
+            <a href="produtos/CarretasTubo.html" class="col-md-4 col-12 card-tipo-produto">
+                <img src="../files/images/produtos/carretas_tubo.webp">
+                <h4>Carretas de Tubo</h4>
+            </a>
+            <a href="produtos/carretaTransformador.html" class="col-md-4 col-12 card-tipo-produto">
+                <img src="../files/images/produtos/carreta-transformador.webp">
+                <h4>Carreta Transformador</h4>
+            </a>
+        </div>
+        <div class="col-md-12 col-12 linha-produtos">
+            <a href="produtos/hr110.html" class="col-md-4 col-12 card-tipo-produto">
+                <img src="../files/images/produtos/HR110.webp">
+                <h4>Recolhimento Hidráulico</h4>
+            </a>
         </div>
     </section>
 
-    <div class="botao-whatsapp-flutuante">
-        <a href="#" target="_blank">
-            <img src="../../../files/images/whatsapp.png" alt="Botão de Whatsapp">
-        </a>
-    </div>
+    <script src="../../assets/js/menu.js"></script>
+    <script src="../../assets/js/home.js"></script>
+    <script src="../../assets/js/ondeEncontrar.js"></script>
 </body>
 
 </html>
