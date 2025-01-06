@@ -2,6 +2,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    gap: 12rem;
+    padding: 7rem 0;
 }
 
 .parceiros {
@@ -62,6 +64,9 @@
     }
 }
 
+#institucional p {
+    font-size: 15px;
+}
 
 .quemSomos {
     display: flex;
@@ -69,8 +74,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    height: 90vh;
-    padding: 0 12rem 0 10rem;
+    height: auto;
+    padding: 0 13rem;
 }
 
 .texto h2 {
@@ -111,9 +116,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10rem;
+    padding: 0 13rem;
     margin-top: -6rem;
-    height: 95vh;
+    height: auto;
 }
 
 .dioMedes h5 {
