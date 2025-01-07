@@ -1,5 +1,23 @@
 /* Header */
-.menu {
+#menu {
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255 255 255 / 32%) !important;
+    z-index: 9999 !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 13rem 12px 13rem;
+    height: 5rem;
+    position: fixed !important;
+    transition: background-color 0.3s ease;
+    left: 1%;
+    width: 98%;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px -5px #000 !important;
+} 
+
+/* .menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -12,9 +30,8 @@
     color: #fff;
     position: fixed !important;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* Borda sutil */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-}
+} */
 
 .menu .logo img {
     max-height: 100px;
@@ -116,18 +133,16 @@
 }
 
 
-#menu {
-    /* display: flex; */
+/* #menu {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
     position: absolute !important;
-    /* box-shadow: 0 0 8px -4px var(--cor-branco); */
     padding: 20px 10rem 12px 5rem;
     height: 5.5rem;
     position: fixed !important;
     transition: background-color 0.3s ease;
-}
+} */
 
 #menu.scrolled {
     background-color: rgb(255 255 255 / 32%) !important;
@@ -151,16 +166,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0px;
-    padding: 0px;
-}
-
-.left a {
-    color: var(--cor-texto-escuro);
-    font-size: 16px;
-    letter-spacing: 0.9px;
-    font-weight: 500;
+    padding: 0px !important;
 }
 
 .opcoes-menu {
@@ -168,6 +176,13 @@
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.opcoes-menu a {
+    color: var(--cor-texto-escuro);
+    font-size: 16px;
+    letter-spacing: 0.9px;
+    font-weight: 500;
 }
 
 .btn:focus {

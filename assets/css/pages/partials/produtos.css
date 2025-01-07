@@ -1,36 +1,8 @@
-#menu {
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(255 255 255 / 32%) !important;
-    z-index: 9999 !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 20px 10rem 12px 8rem;
-    height: 5rem;
-    position: fixed !important;
-    transition: background-color 0.3s ease;
-    left: 1%;
-    width: 98%;
-    margin: 10px 0 0 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px -5px #000 !important;
-}
-
-.opcoes-menu a:hover {
-    text-decoration: none;
-    color: var(--cor-branco);
-    /* border-bottom: 1px solid; */
-}
-
-.left a {
-    /* padding: 12px 20px; */
-}
-
-.dropdown .btnSecondary {
+/* .dropdown .btnSecondary {
     background: transparent;
     color: var(--cor-branco);
     border: none;
-}
+} */
 
 .produto {
     display: flex;
@@ -40,6 +12,7 @@
     gap: 1rem;
     position: absolute;
     margin: 8rem 0 0 0;
+    padding: 0 3rem 0 2.7rem !important;
 }
 
 .cabecalho {
@@ -212,7 +185,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    #menu {
+    /* #menu {
         background-color: #fff !important;
         padding: 3px 0px 0px 10px;
         height: 2.5rem;
@@ -302,13 +275,12 @@
 
     .menu-list {
         flex-direction: column;
-        /* Torna o menu vertical */
     }
 
     .left,
     .right {
         display: none;
-    }
+    } */
 
     .produto {
         margin: 0rem 0 0 0;

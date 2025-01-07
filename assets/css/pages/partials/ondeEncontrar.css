@@ -2,7 +2,7 @@
 .onde-encontrar {
     display: flex;
     gap: 2rem;
-    padding: 10rem 13rem 7rem 13rem;
+    padding: 10rem 17.5rem 7rem 15.5rem;
     background-color: #f8f8f8;
     height: 100vh;
     align-items: center;
@@ -11,7 +11,7 @@
 
 /* Texto à esquerda */
 .texto-descricao {
-    flex: 1;
+    padding: 0px !important;
 }
 
 .texto-descricao h2 {
@@ -22,18 +22,18 @@
 }
 
 .texto-descricao p {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
 }
 
 /* Mapa */
 .mapaRepresentante {
-    flex: 2;
     height: 400px;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     z-index: 1 !important;
+    padding: 0px !important;
 }
 
 .rep h3 {
