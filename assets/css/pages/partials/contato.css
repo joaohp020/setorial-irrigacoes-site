@@ -1,7 +1,7 @@
 #contato {
     background-color: var(--cor-branco);
     height: auto;
-    padding: 7rem 13rem 7rem 14rem;
+    padding: 7rem 16rem 7rem 14rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,11 +9,9 @@
 }
 
 .titulo-contato {
-    text-align: center;
+    text-align: start !important;
     margin: 0 0 1rem 0;
-    width: 75vw;
-    text-align: start;
-    /* padding: 0 11.3rem; */
+    padding: 0px !important;
 }
 
 .titulo-contato h2,
@@ -116,7 +114,7 @@
 
     .titulo-contato {
         margin: 0px;
-        padding: 0 25px;
+        padding: 0 20px !important;
     }
 
     .titulo-contato h2 {

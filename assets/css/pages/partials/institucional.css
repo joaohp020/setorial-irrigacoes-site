@@ -73,9 +73,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    /* gap: 1rem; */
     height: auto;
-    padding: 0 13rem;
+    padding: 0 15rem 0 13rem;
 }
 
 .texto h2 {
@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 13rem;
+    padding: 0 15rem 0 13rem;
     margin-top: -6rem;
     height: auto;
 }
@@ -168,13 +168,18 @@
         height: 3rem;
     }
 
+    #institucional {
+        gap: 12rem;
+        padding: 5rem 0px;
+    }
+
     .quemSomos {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
         height: auto;
-        padding: 3rem 10px;
+        padding: 0px 10px;
     }
 
     .quadro {
@@ -189,7 +194,7 @@
     .dioMedes {
         align-items: center;
         justify-content: center;
-        padding: 6rem 10px;
+        padding: 0px 10px;
         margin-top: -5rem;
         height: auto;
         flex-direction: column-reverse;
@@ -216,7 +221,7 @@
         width: 100%;
         color: var(--cor-verde-escuro);
     }
-    
+
     .dioMedes .texto p {
         font-size: 14px;
         width: 100%;

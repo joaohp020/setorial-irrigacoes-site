@@ -178,7 +178,7 @@
     .bannerUm {
         background-size: cover;
         justify-content: space-between;
-        padding: 0 0px;
+        padding: 0 0px !important;
     }
 
     .bannerDois {
