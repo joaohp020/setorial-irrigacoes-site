@@ -62,6 +62,7 @@
     position: relative;
     /* border-radius: 8px; */
     padding: 0px !important;
+    border-radius: 8px !important;
 }
 
 .dropdown-toggle::after {
@@ -80,7 +81,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    min-width: 14rem !important;
+    min-width: 17rem !important;
     top: 100%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.715) !important;
@@ -93,7 +94,7 @@
 }
 
 .dropdown-menu li {
-    padding: 5px 20px;
+    padding: 5px 20px !important;
     background-color: rgba(255, 255, 255, 0.617) !important;
     backdrop-filter: blur(180px);
     -webkit-backdrop-filter: blur(180px);
@@ -113,8 +114,8 @@
 
 .dropdown:hover>.dropdown-menu {
     display: block;
-    padding: 0px;
-    background-color: rgba(255, 255, 255, 0.715) !important;
+    padding: 8px 5px;
+    background-color: rgb(255 255 255) !important;
     backdrop-filter: blur(180px);
     -webkit-backdrop-filter: blur(180px);
     border-radius: 8px;
@@ -130,18 +131,6 @@
     left: 100%;
     top: 0;
 }
-
-
-/* #menu {
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    position: absolute !important;
-    padding: 20px 10rem 12px 5rem;
-    height: 5.5rem;
-    position: fixed !important;
-    transition: background-color 0.3s ease;
-} */
 
 #menu.scrolled {
     background-color: rgb(255 255 255 / 32%) !important;
@@ -296,6 +285,7 @@ button:focus {
         top: 0px !important;
         padding: 0 8px;
         border-radius: 5px;
+        border: .2px solid #000000;
     }
 
     .mobile-menu {
@@ -354,6 +344,10 @@ button:focus {
         z-index: 9999 !important;
     }
 
+    .dropdown-menu {
+        border: none !important;
+    }
+
     .dropdown .dropdown-menu {
         position: relative;
         left: 0;
@@ -371,7 +365,7 @@ button:focus {
     }
 
     .dropdown-menu li {
-        padding: 0px 15px;
+        padding: 0px;
         background-color: transparent !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
