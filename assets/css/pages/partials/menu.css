@@ -83,7 +83,6 @@
     min-width: 14rem !important;
     top: 100%;
     left: 0;
-    /* background-color: rgb(255 255 255 / 32%) !important; */
     background-color: rgba(255, 255, 255, 0.715) !important;
     backdrop-filter: blur(180px);
     -webkit-backdrop-filter: blur(180px);
@@ -147,9 +146,6 @@
 #menu.scrolled {
     background-color: rgb(255 255 255 / 32%) !important;
     z-index: 9999 !important;
-    box-shadow: 0 0 14px -5px #000;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 #logotipo {
@@ -189,13 +185,17 @@
     box-shadow: none;
 }
 
+.dropdown-menu.active {
+    display: block;
+}
+
 .dropdown-menu.show {
     position: absolute;
     transform: translate3d(0px, 37px, 0px);
     top: 0px;
     left: 0px;
     will-change: transform;
-    background-color: var(--cor-verde-escuro);
+    /* background-color: var(--cor-verde-escuro); */
     z-index: 99999 !important;
 }
 
@@ -206,10 +206,10 @@
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: var(--cor-branco);
+    /* color: var(--cor-branco); */
     text-align: inherit;
     white-space: nowrap;
-    background-color: var(--cor-verde-escuro);
+    /* background-color: var(--cor-verde-escuro); */
     border: none;
 }
 
@@ -256,16 +256,25 @@
     }
 
     #menu {
-        background-color: #fff !important;
+        background-color: transparent !important;
         padding: 3px 0px 0px 10px;
         height: 2.5rem;
         position: fixed !important;
         z-index: 999 !important;
         left: 2%;
-        width: 10%;
+        width: 98%;
         margin: 10px 0 0 0;
         border-radius: 8px;
-        box-shadow: 0 0 10px -5px #000 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+    }
+
+    #menu.scrolled {
+        background-color: transparent !important;
+    }
+
+    #menu-desktop {
+        display: none;
     }
 
     .menu-mobile {
@@ -274,10 +283,14 @@
     }
 
     .menu-icon {
-        background: none;
-        border: none;
+        background: #fff !important;
         font-size: 24px;
         cursor: pointer;
+        position: absolute;
+        left: -7px;
+        top: 0px !important;
+        padding: 0 8px;
+        border-radius: 5px;
     }
 
     .mobile-menu {
@@ -314,6 +327,13 @@
         color: #000 !important;
     }
 
+    .mobile-menu .opcoes-menu {
+        border: none;
+        box-shadow: none;
+        border-radius: 8px !important;
+        margin: 0 !important;
+    }
+
     .menu-list {
         display: flex;
         flex-direction: column;
@@ -342,10 +362,6 @@
         width: 100%;
         margin-top: 10px;
     }
-
-    .opcoes-menu {
-        margin: 45px 0 0 -7px;
-    }
 }
 
 
@@ -363,7 +379,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 901px) and (max-width: 1024px) {
     .menu-mobile {
         display: none !important;
     }

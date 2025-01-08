@@ -39,3 +39,17 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+
+// Abrir Dropdown Menu
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Impede o comportamento padrão do link
+        const dropdownMenu = this.nextElementSibling;
+
+        // dropdownMenu.classList.toggle('active');
+
+        if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
