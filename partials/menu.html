@@ -1,5 +1,3 @@
-<link href="../assets/css/pages/index.css" rel="stylesheet" />
-
 <header id="menu" class="col-md-12 d-sm-none d-md-flex">
     <div class="left col-md-3">
         <img id="logotipo" src="../../files/images/LOGO.png" alt="Logotipo - Setorial Irrigações">
@@ -125,8 +123,19 @@
             </div>
         </div>
     </div>
-</header>
 
-<script src="../assets/js/menu.js"></script>
-<script src="../assets/js/home.js"></script>
-<script src="../assets/js/ondeEncontrar.js"></script>
+    <!-- <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault(); // Impede o comportamento padrão do link
+                const dropdownMenu = this.nextElementSibling;
+
+                // dropdownMenu.classList.toggle('active');
+
+                if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+    </script> -->
+</header>
