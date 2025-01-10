@@ -28,7 +28,7 @@
     <div id="menu-container"></div>
 
     <script>
-        fetch('/menu.html') // Caminho para o arquivo menu.html
+        fetch('menuPartial.html') // Caminho para o arquivo menu.html
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Erro ao carregar o menu: ${response.statusText}`);

@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header id="menu" class="col-md-12 d-sm-none d-md-flex">
+    <!-- <header id="menu" class="col-md-12 d-sm-none d-md-flex">
         <div class="left col-md-9">
             <img id="logotipo" src="../files/images/LOGO.png" alt="Logotipo - Setorial Irrigações">
             <div class="opcoes-menu">
@@ -151,7 +151,25 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+
+    <div id="menu-container"></div>
+
+    <script>
+        fetch('menuPartial.html') // Caminho para o arquivo menu.html
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erro ao carregar o menu: ${response.statusText}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('menu-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o menu:', error);
+            });
+    </script>
 
     <section class="galeria">
         <div class=" col-md-12">
