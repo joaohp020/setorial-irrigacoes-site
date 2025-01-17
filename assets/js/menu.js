@@ -1,17 +1,37 @@
 // Seleciona os botões de abrir e fechar
-const menuToggle = document.getElementById("menu-toggle");
-const closeMenu = document.getElementById("close-menu");
-const mobileMenu = document.getElementById("mobile-menu");
+// const menuToggle = document.getElementById("menu-toggle");
+// const closeMenu = document.getElementById("close-menu");
+// const mobileMenu = document.getElementById("mobile-menu");
 
 // Evento para abrir o menu
-menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.remove("hidden");
-});
+// menuToggle.addEventListener("click", () => {
+//     mobileMenu.classList.remove("hidden");
+// });
 
 // Evento para fechar o menu
-closeMenu.addEventListener("click", () => {
+// closeMenu.addEventListener("click", () => {
+//     mobileMenu.classList.add("hidden");
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const closeMenu = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    // Inicializa o menu móvel oculto
     mobileMenu.classList.add("hidden");
+
+    // Exibe o menu móvel ao clicar no botão
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+    });
+
+    // Oculta o menu móvel ao clicar no botão de fechar
+    closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+    });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
